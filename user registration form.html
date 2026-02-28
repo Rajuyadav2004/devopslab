@@ -6,10 +6,12 @@
 function validateForm() {
 
     var name = document.getElementById("name").value;
+    var lastname = document.getElementById("lastname").value;
     var email = document.getElementById("email").value;
     var password = document.getElementById("password").value;
 
-    if (name == "" || email == "" || password == "") {
+
+    if (name == "" ||lastname == ""|| email == "" || password == "") {
         alert("All fields are required!");
         return false;
     } else {
@@ -25,6 +27,7 @@ function validateForm() {
 
 <form onsubmit="return validateForm()">
     Name: <input type="text" id="name"><br><br>
+    LastName: <input type="text" id="Lastname"><br><br>
     Email: <input type="email" id="email"><br><br>
     Password: <input type="password" id="password"><br><br>
     <input type="submit" value="Register">
