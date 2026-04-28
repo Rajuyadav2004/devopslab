@@ -1,37 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Event Registration</title>
-<script>
-function validateForm() {
-
-    var name = document.getElementById("name").value;
-    var lastname = document.getElementById("lastname").value;
-    var email = document.getElementById("email").value;
-    var password = document.getElementById("password").value;
-
-
-    if (name == "" ||lastname == ""|| email == "" || password == "") {
-        alert("All fields are required!");
-        return false;
-    } else {
-        alert("Registration Successful!");
-        return true;
-    }
-}
-</script>
+    <title>My First Web Page</title>
 </head>
-
 <body>
-<h2>Event Registration Form</h2>
 
-<form onsubmit="return validateForm()">
-    Name: <input type="text" id="name"><br><br>
-    LastName: <input type="text" id="Lastname"><br><br>
-    Email: <input type="email" id="email"><br><br>
-    Password: <input type="password" id="password"><br><br>
-    <input type="submit" value="Register">
-</form>
+    <h1>Hello, World!</h1>
+    <p>This is a simple HTML page.</p>
 
 </body>
 </html>
